@@ -6,6 +6,11 @@ import InvoicesTable from "@/app/ui/invoices/table"
 import { InvoicesTableSkeleton } from "@/app/ui/skeletons"
 import Pagination from "@/app/ui/invoices/pagination"
 import { fetchInvoicesPages } from "@/app/lib/data"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Invoices", // the result here is "Invoices | Dashboard Prac" because of the template prop in the root layout metadata
+}
 
 
 const page = async (props: {searchParams?: Promise<{

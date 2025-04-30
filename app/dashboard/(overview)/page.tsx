@@ -5,6 +5,7 @@ import LatestInvoices from "../../ui/dashboard/latest-invoices"
 import { Suspense } from "react"
 import { CardsSkeleton, LatestInvoicesSkeleton, RevenueChartSkeleton } from "@/app/ui/skeletons"
 
+
 const page = async () => {
 
   return (  
